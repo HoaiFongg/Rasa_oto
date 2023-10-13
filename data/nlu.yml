@@ -1,0 +1,102 @@
+version: "3.1"
+
+nlu:
+#các phần intent chủ yếu dùng để chào hỏi
+- intent: chaohoi
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - xin chào
+    - chào bạn
+    - cho mình hỏi
+    
+- intent: hovaten
+  examples: |
+    - mình tên là [Phong](ten)
+    - [anh](cust_sex) tên là [David](ten)
+    - [chị](cust_sex) tên là [Thảo](ten)
+    - [chú](cust_sex) tên là [Hậu](ten)
+    - [cô](cust_sex) tên là [Tư](ten)
+    - tao tên là [thủy](ten)
+    - [anh](cust_sex) tên là [minh quang](ten)
+    - [chị](cust_sex) tên là [ngọc hằng](tên)
+    - [chú](cust_sex) tên là [luận](ten)
+
+- intent: tambiet
+  examples: |
+    - tạm biệt
+    - cảm ơn
+    - cảm ơn đã tư vấn
+    - chào tạm biệt
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+#intent về khách hàng muốn mua xe
+- intent: muaxe
+  examples: |
+    - Tôi muốn mua một chiếc xe toyota
+    - Tôi đang tìm mua một chiếc xe Toyota
+    - Tôi quan tâm đến việc mua một chiếc xe Toyota.
+
+- intent: timhieudongxe
+  examples: |
+    - Toyota có các dòng xe nào
+    - Tôi có thể tìm hiểu thêm về các dòng xe Toyota ở đâu?
+    - Tôi muốn biết thêm về các dòng xe Toyota.
+    - cửa hàng của bạn có các dòng xe nào
+    - bên bạn có các dòng xe nào
+
+- intent: giaxe
+  examples: |
+    - Giá của các dòng xe Toyota là bao nhiêu?
+    - Tôi có thể tìm hiểu thêm về giá xe Toyota ở đâu?
+    - Tôi muốn biết giá của các dòng xe Toyota.
+    - giá của các dòng xe chủ yếu là bao nhiêu
+    - giá cả của các dòng xe bên bạn là bao nhiêu
+    - tôi muốn mua xe nhưng mà chưa biết giá ra sao bạn có thể cho tôi biết giá được không
+
+- intent: tinhnangxe
+  examples: |
+    - Các dòng xe Toyota có những tính năng gì?
+    - Tôi có thể tìm hiểu thêm về tính năng của xe Toyota ở đâu?
+    - Tôi muốn biết về tính năng của các dòng xe Toyota.
+
+
+#dịch vụ cửa hàng
+- intent: chuongtrinhkhuyenmai
+  examples: |
+    - Toyota có chương trình khuyến mãi nào không?
+    - Tôi có thể tìm hiểu thêm về chương trình khuyến mãi của Toyota ở đâu?
+    - Tôi muốn biết về chương trình khuyến mãi của Toyota.
+
+- intent: datlichlaithuxe
+  examples: |
+    - Tôi muốn đặt lịch lái thử xe Toyota.
+    - Tôi có thể đặt lịch lái thử xe Toyota ở đâu?
+    - Tôi muốn biết cách đặt lịch lái thử xe Toyota.
+
+#chương trình mua xe
+- intent: quytrinhmuaxe
+  examples: |
+    - quy trinh mua xe như thế nào
+    - tôi muốn tìm hiểu về quy trình mua xe
+    - làm sao để mua xe
+    - làm sao để biết về quy trình mua xe
+    - thủ tục mua xe
+    - bây giờ tôi muốn mua xe thì làm như thế nào

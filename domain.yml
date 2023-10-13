@@ -1,0 +1,111 @@
+version: "3.1"
+
+intents:
+  - chaohoi
+  - tambiet
+  - muaxe
+  - timhieudongxe
+  - giaxe
+  - tinhnangxe
+  - chuongtrinhkhuyenmai
+  - datlichlaithuxe
+  - quytrinhmuaxe
+  - hovaten
+
+entities:
+  - ten
+  - cust_sex
+
+slots:
+  ten:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: ten
+  cust_sex:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: cust_sex
+
+responses:
+  utter_chaohoi:
+  - text: "Chào bạn mình bên bộ phận chăm sóc khách hàng của toyota bạn có thể cho mình biết tên để mình có thể xưng hô cho tiện được không ạ."
+  utter_traloibangten:
+  - text: "Chào {ten} mình bên bộ phận chăm sóc khách hàng của toyota mình có thể giúp gì được cho bạn"
+    
+  utter_muaxe:
+  - text: "Dạ, chúng tôi có rất nhiều dòng xe Toyota cho bạn lựa chọn. Bạn có thể cho tôi biết nhu cầu của bạn để tôi có thể giới thiệu cho bạn những chiếc xe phù hợp.
+            Bạn có thể tìm hiểu thêm về các dòng xe Toyota tại website của chúng tôi hoặc tại các đại lý Toyota trên toàn quốc.
+            Chúng tôi luôn sẵn sàng tư vấn cho bạn để bạn có thể lựa chọn được chiếc xe phù hợp nhất với nhu cầu của mình."
+    image: "https://www.toyota.com.vn/media/d1pmr5qz/logo-toyota.jpg"
+
+
+  utter_timhieudongxe:
+  - text: "Dạ, chúng tôi có các dòng xe Toyota như sau:
+            * Toyota Vios
+            * Toyota Yaris
+            * Toyota Corolla Altis
+            * Toyota Camry
+            * Toyota Corolla Cross
+            * Toyota Innova
+            * Toyota Fortuner
+            * Toyota Land Cruiser
+            * Toyota Land Cruiser Prado
+            * Toyota Raize
+          Bạn có thể tìm hiểu thêm về các dòng xe Toyota tại website của chúng tôi hoặc tại các đại lý Toyota trên toàn quốc."
+
+  utter_giaxe:
+  - text: "Dạ, giá của các dòng xe Toyota như sau:
+            * Toyota Vios: từ 472 triệu đồng
+            * Toyota Yaris: từ 527 triệu đồng
+            * Toyota Corolla Altis: từ 719 triệu đồng
+            * Toyota Camry: từ 1,029 tỷ đồng
+            * Toyota Corolla Cross: từ 720 triệu đồng
+            * Toyota Innova: từ 755 triệu đồng
+            * Toyota Fortuner: từ 995 triệu đồng
+            * Toyota Land Cruiser: từ 4,090 tỷ đồng
+            * Toyota Land Cruiser Prado: từ 2,590 tỷ đồng
+            * Toyota Raize: từ 427 triệu đồng
+          Bạn có thể tìm hiểu thêm về giá xe Toyota tại website của chúng tôi hoặc tại các đại lý Toyota trên toàn quốc."
+
+  utter_tinhnangxe:
+  - text: "Dạ, các dòng xe Toyota có rất nhiều tính năng hiện đại, bao gồm:
+            * Hệ thống an toàn Toyota Safety Sense
+            * Động cơ mạnh mẽ và tiết kiệm nhiên liệu
+            * Thiết kế sang trọng và tiện nghi
+            * Khả năng vận hành ổn định và êm ái
+          Bạn có thể tìm hiểu thêm về tính năng của xe Toyota tại website của chúng tôi hoặc tại các đại lý Toyota trên toàn quốc."
+
+  utter_chuongtrinhkhuyenmai:
+  - text: "Dạ, hiện tại Toyota đang có các chương trình khuyến mãi như sau:
+            * Tặng phụ kiện trị giá lên đến 100 triệu đồng
+            * Giảm giá lên đến 15%
+            * Tặng gói bảo hiểm thân vỏ
+          Bạn có thể tìm hiểu thêm về chương trình khuyến mãi của Toyota tại website của chúng tôi hoặc tại các đại lý Toyota trên toàn quốc."
+
+  utter_datlichlaithuxe:
+  - text: "Dạ, để đặt lịch lái thử xe Toyota, bạn có thể liên hệ với chúng tôi qua số hotline 1900 8068 hoặc website của chúng tôi. Chúng tôi sẽ liên hệ lại với bạn để xác nhận lịch lái thử."
+
+  utter_quytrinhmuaxe:
+  - text: "Dạ, quy trình mua xe Toyota như sau:
+            * Khách hàng tìm hiểu thông tin về các dòng xe Toyota và chương trình khuyến mãi
+            * Khách hàng đặt lịch lái thử xe
+            * Khách hàng lựa chọn dòng xe và ký hợp đồng mua bán
+            * Khách hàng thanh toán tiền mua xe
+            * Khách hàng nhận xe và giấy tờ đăng ký
+          Bạn có thể tìm hiểu thêm về quy trình mua xe Toyota tại website của chúng tôi hoặc tại các đại lý Toyota trên toàn quốc."
+
+  utter_tambiet:
+  - text: "Cảm ơn quý khác đã quan tâm đến cửa hàng Toyota của chúng tôi. Chúc quý khách có một ngày tốt lành"
+
+
+actions:
+  - action_extract_name_entity
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

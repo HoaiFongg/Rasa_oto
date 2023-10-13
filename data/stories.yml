@@ -1,0 +1,66 @@
+version: "3.1"
+
+stories:
+
+
+
+- story: hỏi tên khách hàng
+  steps:
+  - intent: chaohoi
+  - action: utter_chaohoi
+  - intent: hovaten
+  - action: action_extract_name_entity
+
+- story: Khách hàng muốn tìm hiểu thông tin về các dòng xe Toyota
+  steps:
+  - intent: chaohoi
+  - action: utter_chaohoi
+  - intent: timhieudongxe
+  - action: utter_timhieudongxe
+
+- story: Khách hàng muốn đặt lịch lái thử xe Toyota
+  steps:
+  - intent: chaohoi
+  - action: utter_chaohoi
+  - intent: datlichlaithuxe
+  - action: utter_datlichlaithuxe
+  - intent: tambiet
+  - action: utter_tambiet
+
+- story: Khách hàng muốn tìm hiểu quy tình mua xe
+  steps:
+  - intent: chaohoi
+  - action: utter_chaohoi
+  - intent: quytrinhmuaxe
+  - action: utter_quytrinhmuaxe
+  - intent: tambiet
+  - action: utter_tambiet
+
+- story: Khách hàng muốn tìm hiểu chương trình khuyến mãi
+  steps:
+  - intent: chaohoi
+  - action: utter_chaohoi
+  - intent: chuongtrinhkhuyenmai
+  - action: utter_chuongtrinhkhuyenmai
+  - intent: tambiet
+  - action: utter_tambiet
+
+
+- story: Khách hàng muốn tim hieu gia xe
+  steps:
+  - intent: chaohoi
+  - action: utter_chaohoi
+  - intent: giaxe
+  - action: utter_giaxe
+  - intent: tambiet
+  - action: utter_tambiet
+
+
+- story: Khách hàng muốn tim hieu tính năng xe
+  steps:
+  - intent: chaohoi
+  - action: utter_chaohoi
+  - intent: tinhnangxe
+  - action: utter_tinhnangxe
+  - intent: tambiet
+  - action: utter_tambiet
