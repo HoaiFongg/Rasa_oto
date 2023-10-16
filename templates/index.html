@@ -43,10 +43,43 @@
         $("#chat-widget-button").on("click",function() {
             $("#chat-widget").toggleClass("d-none");
         });
+
+        $("#chat-widget-close-button").on("click",function(){
+            $("#chat-widget").addClass("d-none");
+        });
+
+
+        //handle user input in the chatbox
+        $('#chat-widget-input').keypress(function(event){
+            if(event.which == 13){
+                let userMessage = $("#chat-widget-input").val();
+                $("#chat-widget-input").val("");
+                //append user message to the chatbot
+                $("#chat-widget-messages").append("<div><strong>You:</strong>" + userMessage + "</div>");
+                
+                
+                //send user message to the sever and get bot's reponse
+                $.ajax({
+                    type: "POST",
+                    url: '/webhook',
+                    contentType: "application/json",
+                    data: JSON.stringify({message: userMessage}),
+                    success: function(data){
+                        let botResponse = data.response;
+                        //append bot's response to the chatbot
+                        $("#chat-widget-messages").append("<div><strong>Bot:</strong>" + botResponse + "</div>");
+
+                    },
+                    error: function(){
+                        //handle error if needed
+                    }
+
+                });
+            }
+        });
     });
 
-
-
 </script>
+
 </body>
 </html>

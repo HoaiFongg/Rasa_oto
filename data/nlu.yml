@@ -23,6 +23,8 @@ nlu:
     
 - intent: hovaten
   examples: |
+    - [anh](cust_sex) tên là [minh](ten)
+    - [anh](cust_sex) tên là [fong](ten)
     - mình tên là [Phong](ten)
     - [anh](cust_sex) tên là [David](ten)
     - [chị](cust_sex) tên là [Thảo](ten)
@@ -90,6 +92,10 @@ nlu:
     - Tôi muốn đặt lịch lái thử xe Toyota.
     - Tôi có thể đặt lịch lái thử xe Toyota ở đâu?
     - Tôi muốn biết cách đặt lịch lái thử xe Toyota.
+    - anh muốn lái thử xe
+    - bây giờ a có thể lái thử xe không
+    - làm sao để lái thử xe
+    - thí dụ bây giờ anh có thể lái thử xe được không
 
 #chương trình mua xe
 - intent: quytrinhmuaxe
@@ -100,3 +106,6 @@ nlu:
     - làm sao để biết về quy trình mua xe
     - thủ tục mua xe
     - bây giờ tôi muốn mua xe thì làm như thế nào
+    - anh muốn mua xe thì làm sao
+    - chị muốn mua xe thì làm như thế nào
+    - chú muốn mua xe bên cửa hàng thì làm sao
