@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-cust_sex",
+      "2": "I-cust_sex",
+      "3": "L-cust_sex",
+      "4": "U-cust_sex",
+      "5": "B-ten",
+      "6": "I-ten",
+      "7": "L-ten",
+      "8": "U-ten",
+      "9": "B-tên",
+      "10": "I-tên",
+      "11": "L-tên",
+      "12": "U-tên",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-cust_sex": 1,
+      "I-cust_sex": 2,
+      "L-cust_sex": 3,
+      "U-cust_sex": 4,
+      "B-ten": 5,
+      "I-ten": 6,
+      "L-ten": 7,
+      "U-ten": 8,
+      "B-tên": 9,
+      "I-tên": 10,
+      "L-tên": 11,
+      "U-tên": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

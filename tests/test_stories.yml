@@ -5,87 +5,118 @@ stories:
 - story: happy path 1
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      xin chào
+    intent: chaohoi
+  - action: utter_chaohoi
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      anh tên là phong
+    intent: hovaten
+  - action: action_extract_name_entity
 
 - story: happy path 2
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      hi
+    intent: chaohoi
+  - action: utter_chaohoi
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      chị tên là Thảo
+    intent: hovaten
+  - action: action_extract_name_entity
   - user: |
       bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+    intent: tambiet
+  - action: utter_tambiet
 
-- story: sad path 1
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
-
-- story: sad path 3
+- story: Khách hàng muốn tìm hiểu thông tin về các dòng xe Toyota
   steps:
   - user: |
       hi
-    intent: greet
-  - action: utter_greet
+    intent: chaohoi
+  - action: utter_chaohoi
   - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      chị tên là Thảo
+    intent: hovaten
+  - action: action_extract_name_entity
   - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+      bên em có những dòng xe nào có thể giới thiệt cho anh được không
+    intent: timhieudongxe
+  - action: utter_timhieudongxe
 
-- story: say goodbye
+
+- story: Khách hàng muốn đặt lịch lái thử xe Toyota
   steps:
   - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+      xin chào
+    intent: chaohoi
+  - action: utter_chaohoi
+  - user: |
+      chú tên là Luận
+    intent: hovaten
+  - action: action_extract_name_entity
+  - user: |
+      chú muốn đặt lịch lái thử xe bên cháu có được không
+    intent: datlichlaithuxe
+  - action: utter_datlichlaithuxe
 
-- story: bot challenge
+- story: Khách hàng muốn tìm hiểu quy tình mua xe
   steps:
   - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot
+      chị cần được tư vấn
+    intent: chaohoi
+  - action: utter_chaohoi
+  - user: |
+      chị tên là Trân
+    intent: hovaten
+  - action: action_extract_name_entity
+  - user: |
+      chị muốn mua xe, quy trình mua xe bên em ra sao
+    intent: quytrinhmuaxe
+  - action: utter_quytrinhmuaxe
+
+- story: Khách hàng muốn tìm hiểu chương trình khuyến mãi
+  steps:
+  - user: |
+      em muốn được tư vấn
+    intent: chaohoi
+  - action: utter_chaohoi
+  - user: |
+      à em tên là Phong
+    intent: hovaten
+  - action: action_extract_name_entity
+  - user: |
+      me là sinh viên khi mua xe em có được khuyến mãi gì không ạ
+    intent: chuongtrinhkhuyenmai
+  - action: utter_chuongtrinhkhuyenmai
+
+- story: Khách hàng muốn tim hieu gia xe
+  steps:
+  - user: |
+      chào
+    intent: chaohoi
+  - action: utter_chaohoi
+  - user: |
+      mình tên là Tam
+    intent: hovaten
+  - action: action_extract_name_entity
+  - user: |
+      giá xe ở bên mình giao động từ bao nhiêu nhỉ
+    intent: giaxe
+  - action: utter_giaxe
+
+
+- story: Khách hàng muốn tim hieu tính năng xe
+  steps:
+  - user: |
+      xin chào
+    intent: chaohoi
+  - action: utter_chaohoi
+  - user: |
+      mình tên là Tam
+    intent: hovaten
+  - action: action_extract_name_entity
+  - user: |
+      xe của bạn có những tính năng gì
+    intent: tinhnangxe
+  - action: utter_tinhnangxe
+

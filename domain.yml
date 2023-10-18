@@ -45,45 +45,45 @@ responses:
 
   utter_timhieudongxe:
   - text: "Dạ, chúng tôi có các dòng xe Toyota như sau:
-            * Toyota Vios
-            * Toyota Yaris
-            * Toyota Corolla Altis
-            * Toyota Camry
-            * Toyota Corolla Cross
-            * Toyota Innova
-            * Toyota Fortuner
-            * Toyota Land Cruiser
-            * Toyota Land Cruiser Prado
-            * Toyota Raize
+            * Toyota Vios\n
+            * Toyota Yaris\n
+            * Toyota Corolla Altis\n
+            * Toyota Camry\n
+            * Toyota Corolla Cross\n
+            * Toyota Innova\n
+            * Toyota Fortuner\n
+            * Toyota Land Cruiser\n
+            * Toyota Land Cruiser Prado\n
+            * Toyota Raize\n
           Bạn có thể tìm hiểu thêm về các dòng xe Toyota tại website của chúng tôi hoặc tại các đại lý Toyota trên toàn quốc."
 
   utter_giaxe:
   - text: "Dạ, giá của các dòng xe Toyota như sau:
-            * Toyota Vios: từ 472 triệu đồng
-            * Toyota Yaris: từ 527 triệu đồng
-            * Toyota Corolla Altis: từ 719 triệu đồng
-            * Toyota Camry: từ 1,029 tỷ đồng
-            * Toyota Corolla Cross: từ 720 triệu đồng
-            * Toyota Innova: từ 755 triệu đồng
-            * Toyota Fortuner: từ 995 triệu đồng
-            * Toyota Land Cruiser: từ 4,090 tỷ đồng
-            * Toyota Land Cruiser Prado: từ 2,590 tỷ đồng
-            * Toyota Raize: từ 427 triệu đồng
+            * Toyota Vios: từ 472 triệu đồng\n
+            * Toyota Yaris: từ 527 triệu đồng\n
+            * Toyota Corolla Altis: từ 719 triệu đồng\n
+            * Toyota Camry: từ 1,029 tỷ đồng\n
+            * Toyota Corolla Cross: từ 720 triệu đồng\n
+            * Toyota Innova: từ 755 triệu đồng\n
+            * Toyota Fortuner: từ 995 triệu đồng\n
+            * Toyota Land Cruiser: từ 4,090 tỷ đồng\n
+            * Toyota Land Cruiser Prado: từ 2,590 tỷ đồng\n
+            * Toyota Raize: từ 427 triệu đồng\n
           Bạn có thể tìm hiểu thêm về giá xe Toyota tại website của chúng tôi hoặc tại các đại lý Toyota trên toàn quốc."
 
   utter_tinhnangxe:
   - text: "Dạ, các dòng xe Toyota có rất nhiều tính năng hiện đại, bao gồm:
-            * Hệ thống an toàn Toyota Safety Sense
-            * Động cơ mạnh mẽ và tiết kiệm nhiên liệu
-            * Thiết kế sang trọng và tiện nghi
-            * Khả năng vận hành ổn định và êm ái
+            * Hệ thống an toàn Toyota Safety Sense\n
+            * Động cơ mạnh mẽ và tiết kiệm nhiên liệu\n
+            * Thiết kế sang trọng và tiện nghi\n
+            * Khả năng vận hành ổn định và êm ái\n
           Bạn có thể tìm hiểu thêm về tính năng của xe Toyota tại website của chúng tôi hoặc tại các đại lý Toyota trên toàn quốc."
 
   utter_chuongtrinhkhuyenmai:
   - text: "Dạ, hiện tại Toyota đang có các chương trình khuyến mãi như sau:
-            * Tặng phụ kiện trị giá lên đến 100 triệu đồng
-            * Giảm giá lên đến 15%
-            * Tặng gói bảo hiểm thân vỏ
+            * Tặng phụ kiện trị giá lên đến 100 triệu đồng\n
+            * Giảm giá lên đến 15%\n
+            * Tặng gói bảo hiểm thân vỏ\n
           Bạn có thể tìm hiểu thêm về chương trình khuyến mãi của Toyota tại website của chúng tôi hoặc tại các đại lý Toyota trên toàn quốc."
 
   utter_datlichlaithuxe:
@@ -91,11 +91,11 @@ responses:
 
   utter_quytrinhmuaxe:
   - text: "Dạ, quy trình mua xe Toyota như sau:
-            * Khách hàng tìm hiểu thông tin về các dòng xe Toyota và chương trình khuyến mãi
-            * Khách hàng đặt lịch lái thử xe
-            * Khách hàng lựa chọn dòng xe và ký hợp đồng mua bán
-            * Khách hàng thanh toán tiền mua xe
-            * Khách hàng nhận xe và giấy tờ đăng ký
+            * Khách hàng tìm hiểu thông tin về các dòng xe Toyota và chương trình khuyến mãi\n
+            * Khách hàng đặt lịch lái thử xe\n
+            * Khách hàng lựa chọn dòng xe và ký hợp đồng mua bán\n
+            * Khách hàng thanh toán tiền mua xe\n
+            * Khách hàng nhận xe và giấy tờ đăng ký\n
           Bạn có thể tìm hiểu thêm về quy trình mua xe Toyota tại website của chúng tôi hoặc tại các đại lý Toyota trên toàn quốc."
 
   utter_tambiet:
